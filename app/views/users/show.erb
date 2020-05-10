@@ -1,0 +1,6 @@
+<p> Here are your Guests info <%= @user.username %>
+<% @user.guests.each do |guest| %>
+  <ul>
+    <li><a href="/guests/<%=guest.id%>"><%= guest.name %></a></li>
+  </ul>
+<% end %>

@@ -1,0 +1,69 @@
+<h1> create a  guest </h1>
+
+<form action="/guests" method="POST">
+<ul>
+
+ <li>
+   <label>Name:</label>
+   <input type="string"  name="name" placeholder=" enter name" />
+ </li>
+
+ 
+
+ <li>
+   <label>Phone number:</label>
+   <input type="integer"  name="phone_number" placeholder="enter phone number"/>
+ </li>
+
+
+ <li>
+ <label>Adress:</label>
+   <input type="string"  name="adress" placeholder="enter adresse"/>
+ </li>
+
+
+
+ <li>
+   <label>E-mail:</label>
+   <input type="string"  name="email"placeholder="enter email" />
+ </li>
+
+
+ <li>
+ <label>Note:</label>
+   <input type="text"  name="note"placeholder="enter note" />
+ </li>
+
+
+ <li>
+   <label>Date created:</label>
+   <input type="date" name="created_at"/>
+ </li>
+
+
+ <li>
+   <label>Date updated:</label>
+   <input type="date" name= "updated_at" />
+ </li>
+
+
+ <li>
+
+ <label>Choose a timeline:</label>
+
+ <select name="timeline" placeholder=" select time_line">
+     <option value="">--Please choose an option--</option>
+     <option value="now">Now</option>
+     <option value="3 months">3 Months</option>
+     <option value="6 months"> 6 Months</option>
+     <option value="1 year">1 Year</option>
+     <option value="just browsing">Just browsing</option>
+   
+ </select>
+ </li>
+
+
+ <li>
+<input type="submit" value="create new guest!" />
+</li>
+</form>
